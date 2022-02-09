@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+            integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+    <!-- Шапка сайта-->
+<header class="header">
+    <div class="container header__container">
+        <nav class="nav-page header__nav">
+            <a href="./index.html" lang="en" class="logo link">Web<span class="logo__header">Studio</span></a>
+            <ul class="header__nav-list list header__list">
+                <li class="header__item"><a href="./index.html"
+                        class="link header__link">Студия</a></li>
+                <li class="header__item"><a href="./portfolio.html" class="header__link--active link header__link">Портфолио</a></li>
+                <li class="header__item"><a href="" class="link header__link">Контакты</a></li>
+            </ul>
+        </nav>
+        <ul class="header__contacts-list list">
+            <li class="header__contacts-item">
+                <a href="mailto:info@devstudio.com" class="link header__contacts-link">
+                    <svg class="header__contacts-icons" width="16px" height="12px">
+                        <use href="./images/icons.svg#icon-mail"></use>
+                    </svg>
+                    info@devstudio.com</a>
+            </li>
+            <li class="header__contacts-item">
+                <a href="tel:+380961111111" class="link header__contacts-link">
+                    <svg class="header__contacts-icons" width="10px" height="16px">
+                        <use href="./images/icons.svg#icon-smartphone"></use>
+                    </svg>
+                    +38 096 111 11 11</a>
+            </li>
+        </ul>
+
+        <button type="button" class="menu-open-btn" aria-expanded="false" aria-controls="menu-container"
+            data-menu-button>
+            <svg width="40" height="40" aria-label="Кнопа вызова меню">
+                <use class="icon-menu" href="./images/icons.svg#icon-menu_40px"></use>
+                <use class="icon-close" href="./images/icons.svg#icon-close_40px"></use>
+            </svg>
+        </button>
+        <div class="header__mob-menu" id="menu-container" data-menu>
+            <div class="container-mob">
+            <div class="header__mob-menu-top">
+            <ul class="header__mob-menu-list list">
+                <li class="header__mob-menu-item"><a href="./index.html" class="link header__mob-menu-link">Студия</a>
+                </li>
+                <li class="header__mob-menu-item"><a href="./portfolio.html" class="link header__mob-menu-link">Портфолио</a></li>
+                <li class="header__mob-menu-item"><a href="" class="link header__mob-menu-link">Контакты</a></li>
+            </ul>
+            </div>
+            <div class="header__mob-menu-bottom">
+                <ul class="header__mob-adress-list list">
+                    <li class="header__mob-adress-item">
+                        <a href="tel:+380961111111" class="link header__mob-adress-link phone-number">
+                            +38 096 111 11 11</a>
+                    </li>
+                    <li class="header__mob-adress-item">
+                        <a href="mailto:info@devstudio.com" class="link header__mob-adress-link">
+                            info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="header__mob-socials-list list">
+                    <li class="header__mob-socials-item">
+                        <a href="" target="_blank" rel="noopener noreferrer nofollow"
+                            class="header__mob-socials-link link">Instagram</a>
+                    </li>
+                    <li class="header__mob-socials-item">
+                        <a href="" target="_blank" rel="noopener noreferrer nofollow"
+                            class="header__mob-socials-link link">Twitter</a>
+                    </li>
+                    <li class="header__mob-socials-item">
+                        <a href="" target="_blank" rel="noopener noreferrer nofollow"
+                            class="header__mob-socials-link link">Facebook</a>
+                    </li>
+                    <li class="header__mob-socials-item">
+                        <a href="" target="_blank" rel="noopener noreferrer nofollow"
+                            class="header__mob-socials-link link">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="section portfolio-section">
+    <!-- Наши работы -->
+    <h1 class="visually-hidden"> Наши работы </h1>
+    <div class="container">
+    <ul class="filter-list list">
+        <li class="button-item"><button type="button" class="filter-btn active"> Все </button></li>
+        <li class="button-item"><button type="button" class="filter-btn"> Веб-сайты </button></li>
+        <li class="button-item"><button type="button" class="filter-btn"> Приложения </button></li>
+        <li class="button-item"><button type="button" class="filter-btn"> Дизайн </button></li>
+        <li class="button-item"><button type="button" class="filter-btn"> Маркетинг </button></li>
+    </ul>
+    <div class="portfolio">
+    <ul class="card-set list">
+<li class="card-item">
+    <a href="" target="_blank" rel="noopener noreferrer nofollow" class="portfolio-link link">
+        <div class="portfolio-items-wrap">
+            <picture>
+            <source srcset="./images/DESK_Tehnokryak@1x-min.jpg 1x, 
+            ./images/DESK_Tehnokryak@2x-min.jpg 2x" media="(min-width: 1200px)">
+            <source srcset="./images/TAB_Tehnokryak@1x-min.jpg 1x, 
+            ./images/TAB_Tehnokryak@2x-min.jpg 2x" media="(min-width: 768px)">
+            <source srcset="./images/MOB_Tehnokryak@1x-min.jpg 1x, 
+            ./images/MOB_Tehnokryak@2x-min.jpg 2x" media="(min-width: 480px)">
+            <img src="./images/img-portfolio-technocrack-min.jpg" alt="Технокряк">
+            </picture>
+
+            <p class="portfolio-img-text">Технокряк это современная площадка распространения коронавируса. Компании
+                используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+        </div>
+        <div class="portfolio-border">
+            <h2 class="portfolio-title">Технокряк</h2>
+            <p class="portfolio-category">Веб-сайт</p>
+        </div>
+    </a>
+</li>
+<li class="card-item">
+    <a href="" target="_blank" rel="noopener noreferrer nofollow" class="portfolio-link link">
+        <div class="portfolio-items-wrap">
+            <picture>
+            <source srcset="./images/DESK_NewOrlean@1x-min.jpg 1x, 
+            ./images/DESK_NewOrlean@2x-min.jpg 2x"
+                media="(min-width: 1200px)">
+            <source srcset="./images/TAB_NewOrlean@1x-min.jpg 1x, 
+            ./images/TAB_NewOrlean@2x-min.jpg 2x"
+                media="(min-width: 768px)">
+            <source srcset="./images/MOB_NewOrlean@1x-min.jpg 1x, 
+            ./images/MOB_NewOrlean@2x-min.jpg 2x"
+                media="(min-width: 480px)">
+            <img src="./images/img-portfolio-new-orlean-min.jpg" alt="Постер New Orlean vs Golden Star">
+            </picture>
+            <p class="portfolio-img-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus itaque
+                eos adipisci eum iste a natus corrupti provident optio quas.</p>
+        </div>
+
+        <div class="portfolio-border">
+            <h2 class="portfolio-title">Постер New Orlean vs Golden Star</h2>
+            <p class="portfolio-category">Дизайн</p>
+        </div>
+
+    </a>
+</li>
+<li class="card-item">
+    <a href="" target="_blank" rel="noopener noreferrer nofollow" class="portfolio-link link">
+        <div class="portfolio-items-wrap">
+            <picture>
+            <source srcset="./images/DESK_Seafood@1x-min.jpg 1x, 
+                ./images/DESK_Seafood@2x-min.jpg 2x" media="(min-width: 1200px)">
+            <source srcset="./images/TAB_Seafood@1x-min.jpg 1x, 
+                ./images/TAB_Seafood@2x-min.jpg 2x" media="(min-width: 768px)">
+            <source srcset="./images/MOB_Seafood@1x-min.jpg 1x, 
+                ./images/MOB_Seafood@2x-min.jpg 2x" media="(min-width: 480px)">
+            <img src="./images/img-portfolio-seafood-min.jpg" alt="Ресторан Seafood">
+            </picture>
+
+            <p class="portfolio-img-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores dolorum
+                iste dolorem voluptatum id aliquid cumque temporibus excepturi ullam est!</p>
+        </div>
+
+        <div class="portfolio-border">
+            <h2 class="portfolio-title">Ресторан Seafood</h2>
+            <p class="portfolio-category">Приложение</p>
+        </div>
+
+    </a>
+</li>
+<li class="card-item">
+    <a href="" target="_blank" rel="noopener noreferrer nofollow" class="portfolio-link link">
+        <div class="portfolio-items-wrap">
+            <picture>
+            <source srcset="./images/DESK_Prime@1x-min.jpg 1x, 
+                            ./images/DESK_Prime@2x-min.jpg 2x" media="(min-width: 1200px)">
+            <source srcset="./images/TAB_Prime@1x-min.jpg 1x, 
+                            ./images/TAB_Prime@2x-min.jpg 2x" media="(min-width: 768px)">
+            <source srcset="./images/MOB_Prime@1x-min.jpg 1x, 
+                            ./images/MOB_Prime@2x-min.jpg 2x" media="(min-width: 480px)">
+            <img src="./images/img-portfolio-prime-min.jpg" alt="Проект Prime">
+            </picture>
+            <p class="portfolio-img-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis et
+                quam velit neque, suscipit totam ea! Reprehenderit nostrum ab facilis.</p>
+        </div>
+
+        <div class="portfolio-border">
+            <h2 class="portfolio-title">Проект Prime</h2>
+            <p class="portfolio-category">Маркетинг</p>
+        </div>
+    </a>
+</li>
+<li class="card-item">
+    <a href="" target="_blank" rel="noopener noreferrer nofollow" class="portfolio-link link">
+        <div class="portfolio-items-wrap">
+            <picture>
+            <source srcset="./images/DESK_Boxes@1x-min.jpg 1x, 
+            ./images/DESK_Boxes@2x-min.jpg 2x" media="(min-width: 1200px)">
+            <source srcset="./images/TAB_Boxes@1x-min.jpg 1x, 
+            ./images/TAB_Boxes@2x-min.jpg 2x" media="(min-width: 768px)">
+            <source srcset="./images/MOB_Boxes@1x-min.jpg 1x, 
+            ./images/MOB_Boxes@2x-min.jpg 2x" media="(min-width: 480px)">
+            <img src="./images/img-portfolio-boxes-min.jpg" alt="Проект Boxes">
+        </picture>
+
+            <p class="portfolio-img-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis debitis
+                veniam eveniet eligendi perspiciatis, earum quaerat autem expedita fugiat facere!</p>
+        </div>
+        <div class="portfolio-border">
+            <h2 class="portfolio-title">Проект Boxes</h2>
+            <p class="portfolio-category">Приложение</p>
+        </div>
+    </a>
+</li>
+<li class="card-item">
+    <a href="" target="_blank" rel="noopener noreferrer nofollow" class="portfolio-link link">
+        <div class="portfolio-items-wrap">
+        <picture>
+            <source srcset="./images/DESK_Inspiration@1x-min.jpg 1x, 
+            ./images/DESK_Inspiration@2x-min.jpg 2x" media="(min-width: 1200px)">
+            <source srcset="./images/TAB_Inspiration@1x-min.jpg 1x, 
+            ./images/TAB_Inspiration@2x-min.jpg 2x" media="(min-width: 768px)">
+            <source srcset="./images/MOB_Inspiration@1x-min.jpg 1x, 
+            ./images/MOB_Inspiration@2x-min.jpg 2x" media="(min-width: 480px)">
+            <img src="./images/img-portfolio-inspiration-min.jpg" alt="Inspiration has no Borders">
+            </picture>
+
+            <p class="portfolio-img-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A obcaecati
+                reiciendis quaerat architecto, sit sunt corrupti nostrum ad. Sapiente, non?</p>
+        </div>
+        <div class="portfolio-border">
+            <h2 class="portfolio-title">Inspiration has no Borders</h2>
+            <p class="portfolio-category">Веб-сайт</p>
+        </div>
+    </a>
+</li>
+<li class="card-item">
+    <a href="" target="_blank" rel="noopener noreferrer nofollow" class="portfolio-link link">
+        <div class="portfolio-items-wrap">
+        <picture>
+            <source srcset="./images/DESK_Limited@1x-min.jpg 1x, 
+            ./images/DESK_Limited@2x-min.jpg 2x" media="(min-width: 1200px)">
+            <source srcset="./images/TAB_Limited@1x-min.jpg 1x, 
+            ./images/TAB_Limited@2x-min.jpg 2x" media="(min-width: 768px)">
+            <source srcset="./images/MOB_Limited@1x-min.jpg 1x, 
+            ./images/MOB_Limited@2x-min.jpg 2x" media="(min-width: 480px)">
+            <img src="./images/img-portfolio-limited-edition-min.jpg" alt="Издание Limited Edition">
+        </picture>
+
+            <p class="portfolio-img-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima,
+                voluptatum placeat? Mollitia in libero nemo blanditiis quos suscipit deleniti temporibus.</p>
+        </div>
+        <div class="portfolio-border">
+            <h2 class="portfolio-title">Издание Limited Edition</h2>
+            <p class="portfolio-category">Дизайн</p>
+        </div>
+    </a>
+</li>
+<li class="card-item">
+    <a href="" target="_blank" rel="noopener noreferrer nofollow" class="portfolio-link link">
+        <div class="portfolio-items-wrap">
+            <picture>
+            <source srcset="./images/DESK_LAB@1x-min.jpg 1x, 
+            ./images/DESK_LAB@2x-min.jpg 2x" media="(min-width: 1200px)">
+            <source srcset="./images/TAB_LAB@1x-min.jpg 1x, 
+            ./images/TAB_LAB@2x-min.jpg 2x" media="(min-width: 768px)">
+            <source srcset="./images/MOB_LAB@1x-min.jpg 1x, 
+            ./images/MOB_LAB@2x-min.jpg 2x" media="(min-width: 480px)">
+            <img src="./images/img-portfolio-lab-min.jpg" alt="Проект LAB">
+        </picture>
+            <p class="portfolio-img-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae optio
+                soluta suscipit ad eos ipsam minus accusamus nesciunt sit tempore?</p>
+        </div>
+        <div class="portfolio-border">
+            <h2 class="portfolio-title">Проект LAB</h2>
+            <p class="portfolio-category">Маркетинг</p>
+        </div>
+    </a>
+</li>
+<li class="card-item">
+    <a href="" target="_blank" rel="noopener noreferrer nofollow" class="portfolio-link link">
+        <div class="portfolio-items-wrap">
+        <picture>
+            <source srcset="./images/DESK_business@1x-min.jpg 1x, 
+            ./images/DESK_business@2x-min.jpg 2x" media="(min-width: 1200px)">
+            <source srcset="./images/TAB_business@1x-min.jpg 1x, 
+            ./images/TAB_business@2x-min.jpg 2x" media="(min-width: 768px)">
+            <source srcset="./images/MOB_business@1x-min.jpg 1x, 
+            ./images/MOB_business@2x-min.jpg 2x" media="(min-width: 480px)">
+            <img src="./images/img-portfolio-growing-business-min.jpg" alt="Growing Business">
+        </picture>
+
+            <p class="portfolio-img-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem
+                facere et odit ipsa praesentium? Eius illum consequuntur asperiores temporibus pariatur.</p>
+        </div>
+        <div class="portfolio-border">
+            <h2 class="portfolio-title">Growing Business</h2>
+            <p class="portfolio-category">Приложение</p>
+        </div>
+    </a>
+</li>
+    </ul>
+    </div>
+
+    </div>
+</section>
+</main>
+    <!-- Футер -->
+    <footer class="basement basement-section">
+        <div class="container basement__container">
+            <div class="basement__wrapper">
+                <a href="./index.html" lang="en" class="logo link">Web<span class="logo__footer">Studio</span></a>
+                <address class="basement__address">
+                    <ul class="basement__list list">
+                        <li class="basement__items"><a href="https://goo.gl/maps/84MK3g47taFm8UyFA" target="_blank"
+                                rel="noopener noreferrer nofollow" class="basement__link link white"> г. Киев, пр-т Леси
+                                Украинки, 26 </a></li>
+                        <li class="basement__items"><a href="mailto:info@devstudio.com"
+                                class="basement__link link">info@devstudio.com</a></li>
+                        <li class="basement__items"><a href="tel:+380961111111" class="basement__link link">+38 096 111 11
+                                11</a></li>
+                    </ul>
+                </address>
+            </div>
+            <div class="basement__wrapper">
+                <h2 class="basement__title">присоединяйтесь</h2>
+                <ul class="socials list">
+                    <li class="socials__item">
+                        <a href="" target="_blank" rel="noopener noreferrer nofollow" class="socials__link link">
+                            <svg class="socials__icon" width="20" height="20">
+                                <use href="images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="" target="_blank" rel="noopener noreferrer nofollow" class="socials__link link">
+                            <svg class="socials__icon" width="20" height="20">
+                                <use href="images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="" target="_blank" rel="noopener noreferrer nofollow" class="socials__link link">
+                            <svg class="socials__icon" width="20" height="20">
+                                <use href="images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="" target="_blank" rel="noopener noreferrer nofollow" class="socials__link link">
+                            <svg class="socials__icon" width="20" height="20">
+                                <use href="images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="basement__wrapper">
+                <h2 class="basement__title">Подпишитесь на рассылку</h2>
+                <form class="subscribe-form">
+                    <input type="email" class="subscribe-form__input" id="form-input" name="mail" placeholder="E-mail">
+                    <button type="submit" class="btn basement__btn">
+                        <span class="subscribe">Подписаться</span>
+                        <svg class="subscribe-form__icon" width="24px" height="24px">
+                            <use href="images/icons.svg#icon-icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </footer>
+        <script src="./js/mobile-menu.js"></script>
+</body>
+</html>

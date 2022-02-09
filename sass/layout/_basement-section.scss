@@ -1,0 +1,112 @@
+.basement__address {
+  font-style: normal;
+}
+.basement__link.white {
+  color: var(--hero-white-color);
+}
+.basement__link {
+  color: rgba(255, 255, 255, 0.6);
+  transition: color var(--duration) var(--timing-function);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.basement-section {
+  padding-bottom: 60px;
+  padding-top: 60px;
+  background-color: var(--background-color-style);
+}
+.basement {
+  .logo {
+    margin-bottom: 20px;
+  }
+  .socials__link {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--hero-white-color);
+  }
+}
+.basement__items:not(:last-child) {
+  margin-bottom: 9px;
+}
+.basement__container {
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+  // @include desktop {
+  //   display: flex;
+  //   align-items: baseline;
+  // }
+}
+.basement__wrapper {
+  text-align: center;
+  &:not(:last-child) {
+    margin-bottom: 60px;
+  }
+  @include desktop {
+    text-align: left;
+    &:not(:last-child) {
+      margin-right: 70px;
+      margin-bottom: 0;
+    }
+    &:last-child {
+      margin-left: auto;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.basement__title {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: var(--hero-white-color);
+}
+
+.subscribe-form__input {
+  width: 100%;
+  height: 50px;
+  padding: 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: transparent;
+  color: var(--hero-white-color);
+  margin-right: 12px;
+  outline: none;
+  transition: border-color var(--duration) var(--timing-function);
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  &:focus,
+  &:hover {
+    border-color: var(--accent-color);
+  }
+  @include desktop {
+    width: 358px;
+  }
+}
+
+.basement__btn {
+  position: relative;
+  width: 200px;
+  padding: 10px 29px;
+  text-align: left;
+  margin-top: 20px;
+  @include desktop {
+    margin-top: 0;
+  }
+}
+.subscribe-form__icon {
+  position: absolute;
+  right: 28px;
+  top: 50%;
+  transform: translateY(-50%);
+}
