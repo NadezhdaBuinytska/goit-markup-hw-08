@@ -1,6 +1,9 @@
 .portfolio {
-  --card-item: 3;
+  @include desktop {
+    --card-item: 3;
+  }
 }
+
 .portfolio-border {
   flex-grow: 1;
   border: 1px solid #eeeeee;

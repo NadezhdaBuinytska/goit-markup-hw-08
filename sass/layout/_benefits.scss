@@ -21,3 +21,8 @@
     padding: 25px 100px;
   }
 }
+.benefits {
+  @include desktop {
+    --card-item: 4;
+  }
+}

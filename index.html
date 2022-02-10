@@ -10,7 +10,6 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
@@ -50,7 +49,7 @@
           <div class="container-mob">
             <div class="header__mob-menu-top">
               <ul class="header__mob-menu-list list">
-                <li class="header__mob-menu-item"><a href="./index.html" class="link header__mob-menu-link">Студия</a>
+                <li class="header__mob-menu-item"><a href="./index.html" class="link header__mob-menu-link link-active">Студия</a>
                 </li>
                 <li class="header__mob-menu-item"><a href="./portfolio.html" class="link header__mob-menu-link">Портфолио</a>
                 </li>
@@ -153,8 +152,11 @@
       <li class="card-item">
         <div class="work__wrap">
           <picture>
-            <source srcset="./images/DESK_APP@1x-min.jpg 1x,./images/DESK_APP@2x-min.jpg 2x" media="(min-width: 1200px)">
-          <img src="./images/img-work-1.jpg" alt="Верстка десктопных приложений" width="370" height="294">
+            <source srcset="./images/DESK_APP@1x-min.jpg 1x,
+            ./images/DESK_APP@2x-min.jpg 2x" media="(min-width: 1200px)" type="image/jpeg">
+            <source srcset="./images/DESK_APP@1x-min.webp 1x,
+      ./images/DESK_APP@2x-min.webp 2x" media="(min-width: 1200px)" type="image/webp">
+          <img src="./images/img-work-1.jpg" alt="Верстка десктопных приложений" width="370" height="294" loading="lazy">
           </picture>
 
           <p class="work__text">Десктопные приложения</p>
@@ -163,8 +165,11 @@
       <li class="card-item">
         <div class="work__wrap">
           <picture>
-            <source srcset="./images/DESK_MobAPP@1x-min.jpg 1x,./images/DESK_MobAPP@2x-min.jpg 2x" media="(min-width: 1200px)">
-          <img src="./images/img-work-2.jpg" alt="Дизайн мобильных приложений" width="370" height="294">
+            <source srcset="./images/DESK_MobAPP@1x-min.jpg 1x,
+            ./images/DESK_MobAPP@2x-min.jpg 2x" media="(min-width: 1200px)" type="image/jpeg">
+            <source srcset="./images/DESK_MobAPP@1x-min.webp 1x,
+      ./images/DESK_MobAPP@2x-min.webp 2x" media="(min-width: 1200px)" type="image/webp">
+          <img src="./images/img-work-2.jpg" alt="Дизайн мобильных приложений" width="370" height="294" loading="lazy">
           </picture>
 
           <p class="work__text">Мобильные приложения</p>
@@ -173,8 +178,11 @@
         <li class="card-item">
         <div class="work__wrap">
           <picture>
-            <source srcset="./images/DESK_Design@1x-min.jpg 1x,./images/DESK_Design@2x-min.jpg 2x" media="(min-width: 1200px)">
-      <img src="./images/img-work-3.jpg" alt="Подборка цветовых решений" width="370" height="294">
+            <source srcset="./images/DESK_Design@1x-min.jpg 1x, 
+            ./images/DESK_Design@2x-min.jpg 2x" media="(min-width: 1200px)" type="image/jpeg">
+            <source srcset="./images/DESK_Design@1x-min.webp 1x,
+      ./images/DESK_Design@2x-min.webp 2x" media="(min-width: 1200px)" type="image/webp">
+      <img src="./images/img-work-3.jpg" alt="Подборка цветовых решений" width="370" height="294" loading="lazy">
           </picture>
       <p class="work__text">Дизайнерские решения</p>
       </div>
@@ -192,7 +200,7 @@
             <source srcset="./images/DESK_Demyanenko@1x-min.jpg 1x, ./images/DESK_Demyanenko@2x-min.jpg 2x" media="(min-width: 1200px)">
             <source srcset="./images/TAB_Demyanenko@1x-min.jpg 1x, ./images/TAB_Demyanenko@2x-min.jpg 2x" media="(min-width: 768px)">
             <source srcset="./images/MOB_Demyanenko@1x-min.jpg 1x, ./images/MOB_Demyanenko@2x-min.jpg 2x" media="(min-width: 480px)">
-          <img src="./images/img-team-1.jpg" alt="Фото сотрудника Игоря Демьяненко Product Designer" class="card">
+          <img src="./images/MOB_Demyanenko@1x-min.jpg" alt="Фото сотрудника Игоря Демьяненко Product Designer" width="450" height="460" loading="lazy" class="card">
           </picture>
             <div class="team-box">
             <h3 class="team__name">Игорь Демьяненко</h3>
@@ -237,7 +245,7 @@
               media="(min-width: 768px)">
             <source srcset="./images/MOB_Repina@1x-min.jpg 1x, ./images/MOB_Repina@2x-min.jpg 2x"
               media="(min-width: 480px)">
-          <img src="./images/img-team-2.jpg" alt="Фото сотрудника Ольги Репиной Frontend Developer"     class="card">
+          <img src="./images/MOB_Repina@1x-min.jpg" alt="Фото сотрудника Ольги Репиной Frontend Developer"  width="450" height="460" loading="lazy" class="card">
           </picture>
 
           <div class="team-box">
@@ -280,8 +288,7 @@
             <source srcset="./images/DESK_Tarasov@1x-min.jpg 1x, ./images/DESK_Tarasov@2x-min.jpg 2x" media="(min-width: 1200px)">
             <source srcset="./images/TAB_Tarasov@1x-min.jpg 1x, ./images/TAB_Tarasov@2x-min.jpg 2x" media="(min-width: 768px)">
             <source srcset="./images/MOB_Tarasov@1x-min.jpg 1x, ./images/MOB_Tarasov@2x-min.jpg 2x" media="(min-width: 480px)">
-          <img src="./images/img-team-3.jpg" alt="Фото сотрудника Николая Тарасова Marketing"
-            class="card">
+          <img src="./images/MOB_Tarasov@1x-min.jpg" alt="Фото сотрудника Николая Тарасова Marketing"  width="450" height="460" loading="lazy" class="card">
           </picture>
           <div class="team-box">
           <h3 class="team__name">Николай Тарасов</h3>
@@ -323,8 +330,7 @@
             <source srcset="./images/DESK_Ermakov@1x-min.jpg 1x, ./images/DESK_Ermakov@2x-min.jpg 2x" media="(min-width: 1200px)">
             <source srcset="./images/TAB_Ermakov@1x-min.jpg 1x, ./images/TAB_Ermakov@2x-min.jpg 2x" media="(min-width: 768px)">
             <source srcset="./images/MOB_Ermakov@1x-min.jpg 1x, ./images/MOB_Ermakov@2x-min.jpg 2x" media="(min-width: 480px)">
-          <img src="./images/img-team-4.jpg" alt="Фото сотрудника Михаила Ермакова UI Designer" 
-            class="card">
+          <img src="./images/MOB_Ermakov@1x-min.jpg" alt="Фото сотрудника Михаила Ермакова UI Designer"  width="450" height="460" loading="lazy" class="card">
           </picture>
 
           <div class="team-box">
@@ -369,43 +375,43 @@
     <section class="clients section">
       <div class="container">
         <h2 class="section-title">Постоянные клиенты</h2>
-        <ul class="card-set card-set--clients list">
-          <li class=" card-item--clients">
+        <ul class="card-set clients-list list">
+          <li class="card-item">
             <a href=""  target="_blank" rel="noopener noreferrer nofollow" class="clients__link link">
               <svg class="clients__icons" width="106" height="60">
                 <use href="images/icons.svg#icon-Logo-1"></use>
               </svg>
             </a>
           </li>
-          <li class=" card-item--clients">
+          <li class="card-item">
             <a href=""  target="_blank" rel="noopener noreferrer nofollow" class="clients__link link">
               <svg class="clients__icons" width="106" height="60">
                 <use href="images/icons.svg#icon-Logo-2"></use>
               </svg>
             </a>
           </li>
-          <li class=" card-item--clients">
+          <li class="card-item">
             <a href=""  target="_blank" rel="noopener noreferrer nofollow" class="clients__link link">
               <svg class="clients__icons" width="106" height="60">
                 <use href="images/icons.svg#icon-Logo-3"></use>
               </svg>
             </a>
           </li>
-          <li class=" card-item--clients">
+          <li class="card-item">
             <a href=""  target="_blank" rel="noopener noreferrer nofollow" class="clients__link link">
               <svg class="clients__icons" width="106" height="60">
                 <use href="images/icons.svg#icon-Logo-4"></use>
               </svg>
             </a>
           </li>
-          <li class="card-item--clients">
+          <li class="card-item">
             <a href=""  target="_blank" rel="noopener noreferrer nofollow" class="clients__link link">
               <svg class="clients__icons" width="106" height="60">
                 <use href="images/icons.svg#icon-Logo-5"></use>
               </svg>
             </a>
           </li>
-          <li class="card-item--clients">
+          <li class="card-item">
             <a href=""  target="_blank" rel="noopener noreferrer nofollow" class="clients__link link">
               <svg class="clients__icons" width="106" height="60">
                 <use href="images/icons.svg#icon-Logo-6"></use>
@@ -524,8 +530,11 @@
         <use href="images/icons.svg#icon-policy"></use>
       </svg>
     </span>
-    Соглашаюсь с рассылкой и принимаю&#160; 
-    <a href="" class="licensing-policy">    Условия договора</a>
+    <span>
+    Соглашаюсь с рассылкой и принимаю&#160;
+    <a href="" class="licensing-policy"> Условия договора</a> 
+    </span>
+
   </label>
   </div>
   <button type="submit" class="btn">Отправить</button>

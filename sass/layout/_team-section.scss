@@ -1,5 +1,9 @@
 .team {
   background-color: #f5f4fa;
+
+  @include desktop {
+    --card-item: 4;
+  }
 }
 .team__item {
   background-color: #ffffff;

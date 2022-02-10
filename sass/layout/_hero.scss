@@ -1,5 +1,5 @@
 .hero {
-  background-color: var(--background-color-style);
+  // background-color: var(--background-color-style);
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -7,14 +7,13 @@
     url(../images/MOB_Hero_bg@1x-min.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover, auto;
+  background-size: cover;
   text-align: center;
   padding-top: 118px;
   padding-bottom: 118px;
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-color: var(--background-color-style);
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -40,6 +39,7 @@
   @include desktop {
     padding-top: 200px;
     padding-bottom: 200px;
+    background-size: 1600px auto;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -48,7 +48,6 @@
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-color: var(--background-color-style);
       background-image: linear-gradient(
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)

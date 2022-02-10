@@ -1,21 +1,24 @@
 @import './utils/vars';
 @import './utils/mixins';
+@import './utils/visually-hidden';
+
 @import './base/reset';
 @import './base/common';
+
 @import './components/container';
 @import './components/modal';
 @import './components/logo';
+@import './components/btn';
+@import './components/card-set';
+@import './components/section-title';
+@import './components/social-gallery';
+
 @import './layout/header';
 @import './layout/hero';
-@import './components/btn';
-@import './utils/visually-hidden';
-@import './components/card-set';
 @import './layout/benefits';
-@import './components/section-title';
 @import './layout/team-section';
 @import './layout/work-section';
 @import './layout/clients-section';
 @import './layout/basement-section';
-@import './components/social-gallery';
 @import './layout/portfolio-filter';
 @import './layout/portfolio-section';
