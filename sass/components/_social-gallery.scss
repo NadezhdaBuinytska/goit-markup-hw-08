@@ -9,6 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--icons-main-color);
   transition: background-color var(--duration) var(--timing-function),
     color var(--duration) var(--timing-function);
   &:hover,

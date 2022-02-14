@@ -395,6 +395,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--icons-main-color);
   transition: background-color var(--duration) var(--timing-function), color var(--duration) var(--timing-function);
 }
 
@@ -863,11 +864,6 @@ img {
   padding: 30px 24px;
 }
 
-.team .socials__link {
-  background-color: #ffffff;
-  color: var(--icons-main-color);
-}
-
 .work {
   padding-top: 0px;
   --card-item: 3;
@@ -966,6 +962,11 @@ img {
 .basement .socials__link {
   background-color: rgba(255, 255, 255, 0.1);
   color: var(--hero-white-color);
+  transition: background-color var(--duration) var(--timing-function), color var(--duration) var(--timing-function);
+}
+
+.basement .socials__link:hover, .basement .socials__link:focus {
+  background-color: var(--accent-color);
 }
 
 .basement__items:not(:last-child) {

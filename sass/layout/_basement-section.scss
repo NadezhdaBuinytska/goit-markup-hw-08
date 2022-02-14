@@ -25,6 +25,12 @@
   .socials__link {
     background-color: rgba(255, 255, 255, 0.1);
     color: var(--hero-white-color);
+    transition: background-color var(--duration) var(--timing-function),
+      color var(--duration) var(--timing-function);
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+    }
   }
 }
 .basement__items:not(:last-child) {
